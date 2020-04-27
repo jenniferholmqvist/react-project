@@ -1,0 +1,71 @@
+.nav-div {
+    background:         linear-gradient(to right, slategray, whitesmoke); 
+    overflow:           hidden;
+}
+
+
+:hover.nav-div {
+    box-shadow:         inset 0px 0px 0px 4px whitesmoke;
+}
+
+
+.nav-link-1,
+.nav-link-2,
+.nav-link-3 {
+    float:              left;
+    color:              slategray;
+    padding:            0.8rem 0.8rem 0.5rem 0.8rem;
+    text-decoration:    none;
+    background-color:   whitesmoke;
+    border:             2px solid whitesmoke;
+    border-radius:      3px;
+    margin:             1rem;
+    font-family:        'Aclonica';
+    font-size:          0.8rem;
+}
+
+
+:hover.nav-link-1,
+:hover.nav-link-2,
+:hover.nav-link-3 {
+    color:              whitesmoke;
+    background-color:   slategray;
+    font-weight:         normal;
+}
+
+
+.nav-link-3 {
+    color:              black;
+    font-weight:        bold;
+}
+
+
+.nav-link-4 {
+    float:              right;
+    color:              whitesmoke;
+    padding:            0.8rem 0.8rem 0.5rem 0.8rem;
+    text-decoration:    none;
+    background-color:   slategray;
+    border:             2px solid whitesmoke;
+    border-radius:      3px;
+    margin:             1rem;
+    font-family:        'Aclonica';
+    font-size:          0.8rem;
+}
+
+
+:hover.nav-link-4 {
+    color:              slategray;
+    background-color:   whitesmoke;
+    border:             2px solid slategray;
+}
+
+
+:active.nav-link-1,
+:active.nav-link-2,
+:active.nav-link-3,
+:active.nav-link-4 {
+    color:              black;
+    box-shadow:         inset 0px 0px 0px 4px black;  
+}
+

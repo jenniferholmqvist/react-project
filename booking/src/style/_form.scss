@@ -1,0 +1,40 @@
+.form-div {
+    padding-top:        7rem;
+    font-family:        'Aclonica';
+    color:              black;
+    background:         linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 85.71%),
+                        linear-gradient(127deg, rgba(0,255,0,.8), rgba(100, 66, 119, 0) 35.71%),
+                        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 85.71%);
+    height:             45rem;
+    
+    
+}
+
+.booking-form {
+    background-color:   rgba(211,211,211,0.5);
+    padding:            5rem;
+    width:              30rem;
+    height:             20rem;
+    border:             2px solid whitesmoke;
+    margin:             auto;
+}
+
+.name-input,
+.date-input,
+.number-input {
+    background:         whitesmoke;
+    padding:            0.5rem 8rem 0.3rem 8rem;
+    border-radius:      5px;
+    border:             2px solid lightgray;
+    margin:             0.5rem 0rem 3rem 0rem;
+    font-family:        'Aclonica';
+}
+
+
+h4 {
+    margin:             0rem;
+}
+
+
+
+

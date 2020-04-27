@@ -1,0 +1,21 @@
+
+.card {
+    background-color:   lightgrey;
+    display:            inline-block;
+    padding:            3rem 2rem;
+    margin:             5rem;
+    border:             1px whitesmoke solid;
+    width:              18rem;
+}
+
+
+:hover.card {
+    background-color:   white;
+}
+
+
+.card-text {
+    color:              lightslategray;
+}
+
+

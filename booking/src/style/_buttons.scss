@@ -1,0 +1,21 @@
+//--------------Standard button-------------
+.stan-btn,
+:visited.stan-btn {
+    background-color:   whitesmoke;
+    color:              lightslategray;
+    border:             2px solid lightslategray;
+    border-radius:      5px;
+    padding:            0.7rem 1rem 0.5rem 1rem;
+    font-family:        'Aclonica';
+}
+
+
+:hover.stan-btn {
+    background-color:   lightslategray;
+    color:              whitesmoke;
+    border-radius:      4px;
+}
+
+:active.stan-btn {
+    box-shadow:         inset 0px 0px 0px 4px black;
+}
