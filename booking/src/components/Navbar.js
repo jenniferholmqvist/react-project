@@ -3,6 +3,7 @@ import {Link} from  "react-router-dom";
 
 import "../style/_navbar.scss";
 
+
 const Navbar = () => {
     return (
         <nav className={"nav"}>
@@ -15,7 +16,11 @@ const Navbar = () => {
                 <Link className={"nav-link-1"} to="/card">Startsida</Link>
                 <Link className={"nav-link-2"} to="/bookings">Bokningar</Link>
                 <Link className={"nav-link-3"} to="/form">Boka tid</Link>
-                <Link className={"nav-link-4"} to="/">Logga ut</Link>
+
+                <Link className={"nav-link-1"} to="/AdminSida">Admin</Link>
+                
+                {/*<Link className={"nav-link-4"} to="/">Logga ut</Link>*/}
+                
             </div>
         </nav>
         

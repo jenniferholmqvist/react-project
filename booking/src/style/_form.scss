@@ -35,6 +35,36 @@ h4 {
     margin:             0rem;
 }
 
+.admin-form {
+    background-color:   rgba(211,211,211,0.5);
+    padding:            5rem;
+    width:              28rem;
+    height:             30rem;
+    border:             2px solid whitesmoke;
+    margin:             auto;
+}
+
+.title-input,
+.description-input,
+.price-input {
+    background:         whitesmoke;
+    padding:            0.5rem 8rem 0.3rem 8rem;
+    border-radius:      5px;
+    border:             2px solid lightgray;
+    margin:             0.5rem 0rem 3rem 0rem;
+    font-family:        'Aclonica';
+   
+}
+
+.file-input {
+    background:         whitesmoke;
+    padding:            0.5rem 4rem 0.3rem 0rem;
+    border-radius:      5px;
+    margin:             0.5rem 0rem 3rem 0rem;
+    font-family:        'Aclonica';
+
+}
+
 
 
 
