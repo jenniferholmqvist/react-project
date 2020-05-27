@@ -11,6 +11,7 @@ import "../../style/_headlines.scss";
 
 import Logout from "../Auth/Logout";
 import Navbar from "../Navbar";
+import AdminUpdate from "./AdminUpdate";
 
 
 class AdminProfile extends Component {
@@ -53,6 +54,7 @@ async onSubmitToApi(e){
             <Logout />
             
             Profil-info {this.props.userData} 
+            
             
            
             <div className={"form-div"}>

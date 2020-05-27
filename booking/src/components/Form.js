@@ -6,7 +6,7 @@ import "../style/_buttons.scss";
 
 class Form extends Component {
     constructor(props){
-        super(props);
+    super(props);
 
         //initilerat state
         this.state = {
@@ -43,8 +43,8 @@ class Form extends Component {
                     <h4>Datum:</h4>
                     <input className={"date-input"}type={"text"} placeholder={"Ange önskat datum"} onChange={this.handleOnChangeTime}></input>
                     <h4>Telefonnummer:</h4>
-                    <input className={"number-input"}type={"number"} placeholder={"Ange telefonnummer"} onChange={this.handleOnChangeMobile}></input><br />
-                    <input className={"stan-btn"} type={"submit"} onSubmit={this.handleOnSubmit} value={"Registrera!"}></input>
+                    <input className={"number-input"} type={"number"} placeholder={"Ange telefonnummer"} onChange={this.handleOnChangeMobile}></input><br />
+                    <input className={"stan-btn"} type={"submit"} onSubmit={this.handleOnSubmit} value={"Boka!"}></input>
                 </form>
 
                 <div>{this.state.name}</div>

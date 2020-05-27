@@ -28,11 +28,12 @@ class AdminSida extends Component {
 
                 :
 
-           ( <AdminProfile userData={this.state.user} /> )
+           (<AdminProfile userData={this.state.user} /> )
 
            
            
         }
+        
            
             
         </div>)

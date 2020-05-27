@@ -18,6 +18,7 @@ const Navbar = () => {
                 <Link className={"nav-link-3"} to="/form">Boka tid</Link>
 
                 <Link className={"nav-link-1"} to="/AdminSida">Admin</Link>
+                <Link className={"nav-link-1"} to="/ContactForm">Kontakta oss</Link>
                 
                 {/*<Link className={"nav-link-4"} to="/">Logga ut</Link>*/}
                 

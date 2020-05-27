@@ -13,10 +13,13 @@ import Logout from "./Auth/Logout";
 import AdminSida from "./AdminSida";
 
 
+
 import UserLogin from "./AuthUser/UserLogin";
 import UserPage from "./AuthUser/UserPage";
 
 import FirebaseTest from "./FirebaseTest";
+import UserProfile from "./AuthUser/UserProfile";
+import ContactForm from "./ContactForm";
 
 
 const Approute= () => {
@@ -33,9 +36,15 @@ const Approute= () => {
                 <Route path="/AdminSida" exact component={AdminSida}></Route>
                 <Route path="/AdminProfile" exact component={AdminProfile}></Route>
 
+                <Route path="/ContactForm" exact component={ContactForm}></Route>
+
                 <Route path="/AdminUpdate" exact component={App}></Route>
 
                 <Route path="/FirebaseTest" exact component={FirebaseTest}></Route>
+
+                <Route path="/UserProfile" exact component={UserProfile}></Route>
+
+                <Route path="/testuser" exact component={UserLogin}></Route>
                 <Route path="/UserPage" exact component={UserPage}></Route>
 
 

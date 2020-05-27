@@ -1,19 +1,20 @@
 import React, {Component} from "react";
+import firebase from "./FirebaseConfig";
 import faker from "faker";
 
 import "../style/_card.scss";
 import "../style/_buttons.scss";
 import "../style/_background.scss";
 
-import firebase from "./FirebaseConfig";
+
 
 class Card extends Component {
 
     onClickSaveToFirestore() {
         ///När vi trycker på knappen så borde vi skriva in nedan i docRef
-        const docRef = firebase.firestore().collection("booking").doc(this.props.docId.toString());
+        const docRef = firebase.firestore().collection("booking").doc(this.props.docId.toString()); //skapar ni dokument-referens
 
-        docRef.set({
+        docRef.set({ //sätter värdet
             name: this.props.title,
             description: this.props.description,
             price: this.props.price
@@ -33,7 +34,7 @@ render () {
                             <p className={"card-price"}>fr. {this.props.price} kr</p>
                                 {/*<img> src={this.props.image}</img>*/}
                                 <button className={"stan-btn"} onClick={this.onClickSaveToFirestore.bind(this)}>Boka</button>
-                                <button className={"stan-btn"}>Ta bort</button>  
+                               
                 </div>
         </div>
     

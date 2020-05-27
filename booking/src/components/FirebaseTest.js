@@ -1,7 +1,9 @@
+
   
 import React, { Component } from "react";
 
-import firebase from "./FirebaseConfig";
+import firebase from "./FirebaseConfig"
+
 
 
 
@@ -12,7 +14,7 @@ class FirebaseTest extends Component {
         const db = firebase.firestore();
         const docRef = db.collection("booking").doc("info")
         //alt
-        
+        const docRef2 = firebase.firestore().collection("booking").doc("info2")
 //läser data from firebase
         docRef
         .get()
@@ -30,7 +32,10 @@ class FirebaseTest extends Component {
               item:"test",
               price:2000
           })
-     
+      docRef2.set({
+          item:"test 2",
+          price:3000
+      })
     }
 
     render() {
@@ -45,3 +50,4 @@ class FirebaseTest extends Component {
 }
 
 export default FirebaseTest;
+

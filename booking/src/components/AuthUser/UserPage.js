@@ -3,11 +3,22 @@ import React, { Component } from "react";
 import UserProfile from "./UserProfile";
 import UserLogin from "./UserLogin";
 
+import firebase from "../FirebaseConfig";
+
 
 class UserPage extends Component {
     state = {
         user: null || localStorage.getItem("user"),
+        displayName : ""
         
+    }
+
+    //life cycle metod
+    //component kör efter render() - > componentDidMount -> uppdateras state-> sen anropas render igen (anropas efter varje uppdatering av state)
+    componentDidMount(){
+        firebase.auth().onAuthStateChanged( //anropas när man loggar in eller loggar ut 
+            user=> this.setState({user: user.email, displayName:user.displayName})
+        )
     }
 
 
@@ -15,21 +26,16 @@ class UserPage extends Component {
  //const enfunction = ()=> { }
 
     render() {
-
-        const loggedIn = this.state.user || localStorage.getItem("user");
+        const loggedIn = this.state.user;
         return (
             <div>
                 {!loggedIn ?
-                    <UserLogin userCredential={(user) => {
-                        this.setState({ user: user.email })
-                        localStorage.setItem("user", this.state.user)
-                    }
-                    } /> :
-                    <UserProfile userData={this.state.user} />
+                    <UserLogin /> :
+                    <UserProfile userData={this.state.displayName || this.state.user} />
                 }
             </div>
         )
     }
 }
 
-export default UserPage; 
+export default UserPage;

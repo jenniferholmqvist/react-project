@@ -66,3 +66,54 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+_____________________________________________________________
+
+Strapi -> http authentication
+
+Rest API -> 
+*en klient - server (resurser)
+*get, post, delete, put/delete
+http-metoderna för kommunikation
+
+http://domäännamn.com/products (products = endpoint)
+
+->get //läsa , gör detta genom axios request-promise, js egna fetch, httpxmlrequest
+axios.get("http://domäännamn.com/products") kan hämta tex 
+http://domäännamn.com/products1 eller http://domäännamn.com/products2
+header: 
+
+response = axios.get("http://domäännamn.com/products")
+
+-> post // skapa data i endpoints
+axios.post("http://http://domäännamn.com/products", {ett objekt med data} )
+
+exempel på "ett objekt med data":
+const product = {   title: e.target.elements.title.value, 
+                    description: e.target.elements.description.value 
+                    //den hämtar data från klienten
+                      
+
+-> put // uppdatera data i endpoints
+axios.put("http://domäännamn.com/products/1", {ny data/ett objekt})
+
+axios.delete("http://domäännamn.com/products/1")
+authentication: "jwt"
+})
+
+
+
+firebase -> 
+    api keys ()
+    -> secret key, public key
+
+________ 
+RSA 
+"något hemligt" (client A secret key + klient B public)
+-> client B ( client B secret key + public key)
+client A secret key + public key -> client B public key + secret key
+________
+
+reset password
+
+reset-> token plus länk till den sida de kommer att ändra lösenord

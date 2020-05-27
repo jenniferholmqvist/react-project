@@ -2,23 +2,26 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
+//vi ska gömma apikey i en dold fil senare 
+
+require('dotenv').config()
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA8EsDIyItqth4f3a8Hx8FLstUmmT_KrZI",
-    authDomain: "firstproject-16cb4.firebaseapp.com",
-    databaseURL: "https://firstproject-16cb4.firebaseio.com",
-    projectId: "firstproject-16cb4",
-    storageBucket: "firstproject-16cb4.appspot.com",
-    messagingSenderId: "110850772675",
-    appId: "1:110850772675:web:d9316e47ea0c65f5cf9c76",
-    measurementId: "G-4VGSMV8CDS"
-  };
+  apiKey:             process.env.REACT_APP_APIKEY,
+  authDomain:         process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL:        process.env.REACT_APP_DATABASE_URL,
+  projectId:          process.env.REACT_APP_PROJECT_ID,
+  storageBucket:      process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId:  process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId:              process.env.REACT_APP_APP_ID,
+  measurementId:      process.env.REACT_APP_MEASUREMENT_ID
+};
 
 firebase.initializeApp(firebaseConfig);
 
 //firebase.firestore().settings({timestampsInSnapshots:true});
 
-export const googleProvider = new firebase.auth.GoogleAuthProvider();
+//sexport const googleProvider = new firebase.auth.GoogleAuthProvider();
 // en till 
 
 export const auth = firebase.auth();
