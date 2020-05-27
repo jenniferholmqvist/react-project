@@ -36,6 +36,9 @@ render () {
                                 <button className={"stan-btn"} onClick={this.onClickSaveToFirestore.bind(this)}>Boka</button>
                                
                 </div>
+
+
+    
         </div>
     
 

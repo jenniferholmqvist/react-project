@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"; //React router 
 import Booking from "./Booking";
 
 import Navbar from "./Navbar";
-import Form from "./Form";
+import Form from "./Forms/Form";
 import NotFoundPage from "./NotFoundPage";
 import App from "./App";
 import AdminLogin from "./Auth/AdminLogin";
@@ -17,9 +17,9 @@ import AdminSida from "./AdminSida";
 import UserLogin from "./AuthUser/UserLogin";
 import UserPage from "./AuthUser/UserPage";
 
-import FirebaseTest from "./FirebaseTest";
+import FirebaseTest from "./NotInUse/FirebaseTest";
 import UserProfile from "./AuthUser/UserProfile";
-import ContactForm from "./ContactForm";
+import ContactForm from "./Forms/ContactForm";
 
 
 const Approute= () => {
@@ -30,7 +30,7 @@ const Approute= () => {
             <Navbar><Logout /></Navbar>
             <Switch>
                 <Route path="/Card" component={App} exact ></Route>
-                <Route path="/Bookings" component={Booking} exact></Route>
+                <Route path="/Booking" component={Booking} exact></Route>
                 <Route path="/Form" component={Form}></Route>
                 <Route path="/AdminLogin" exact component={AdminLogin}></Route>
                 <Route path="/AdminSida" exact component={AdminSida}></Route>
