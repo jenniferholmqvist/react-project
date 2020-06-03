@@ -4,7 +4,7 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "sqlite",
+        "client": "postgre",
         "filename": ".tmp/data.db"
       },
       "options": {
