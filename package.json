@@ -6,12 +6,12 @@
     "npm": "6.9.0",
     "node": "v10.16.3"
   },
-  
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "faker": "^4.1.0",
     "firebase": "^7.14.3",
     "node-sass": "^4.14.0",
